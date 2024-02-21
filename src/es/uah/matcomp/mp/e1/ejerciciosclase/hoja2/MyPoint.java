@@ -8,7 +8,10 @@ public class MyPoint {
         this.x = x;
         this.y = y;
     }
-    public MyPoint(){}
+    public MyPoint(){
+        this.x = 0;
+        this.y = 0;
+    }
 
     public int getX() {
         return x;
@@ -26,8 +29,10 @@ public class MyPoint {
         this.y = y;
     }
     public int[] getXY(){
-        int numeros[] = {getX(),getY()};
-        return numeros;
+        int result[] = new int[2];
+        result[0]=getX();
+        result[1]=getY();
+        return result;
     }
     public void setXY(int x,int y){
         setX(x);

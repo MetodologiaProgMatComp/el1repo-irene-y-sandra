@@ -9,7 +9,10 @@ public class MyCircle {
         this.center = center;
         this.radius = radius;
     }
-    public MyCircle(){}
+    public MyCircle(){
+        center.setXY(0,0);
+        radius = 1;
+    }
     public MyCircle(int x, int y,int radius){
         center.setX(x);
         center.setY(y);
