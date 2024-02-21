@@ -1,4 +1,4 @@
-import es.uah.matcomp.mp.e1.ejerciciosclase.Date;
+import es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.Date;
 
 public class TestDate {
     public static void main(String[] args) {

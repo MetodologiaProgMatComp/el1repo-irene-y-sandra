@@ -1,4 +1,4 @@
-package es.uah.matcomp.mp.e1.ejerciciosclase;
+package es.uah.matcomp.mp.e1.ejerciciosclase.hoja1;
 
 public class InvoiceItem {
     private String id;
@@ -40,7 +40,7 @@ public class InvoiceItem {
         return unitPrice*qty;
     }
     public String toString(){
-        return "es.uah.matcomp.mp.e1.ejerciciosclase.InvoiceItem[id=" + id + " desc=" + desc + " qty=" + qty + " unitPrice=" + unitPrice + "]";
+        return "es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.InvoiceItem[id=" + id + " desc=" + desc + " qty=" + qty + " unitPrice=" + unitPrice + "]";
     }
 
 }

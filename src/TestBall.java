@@ -1,4 +1,4 @@
-import es.uah.matcomp.mp.e1.ejerciciosclase.Ball;
+import es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.Ball;
 
 public class TestBall {
     public static void main(String[] args) {

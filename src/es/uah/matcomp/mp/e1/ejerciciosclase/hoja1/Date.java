@@ -1,4 +1,4 @@
-package es.uah.matcomp.mp.e1.ejerciciosclase;
+package es.uah.matcomp.mp.e1.ejerciciosclase.hoja1;
 
 public class Date {
     private int day;

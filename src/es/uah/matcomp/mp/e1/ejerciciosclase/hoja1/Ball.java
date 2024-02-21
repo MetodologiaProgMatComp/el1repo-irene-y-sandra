@@ -1,4 +1,4 @@
-package es.uah.matcomp.mp.e1.ejerciciosclase;
+package es.uah.matcomp.mp.e1.ejerciciosclase.hoja1;
 
 public class Ball {
     private float x;
@@ -63,7 +63,7 @@ public class Ball {
         yDelta = -yDelta;
     }
     public String toString(){
-        return "es.uah.matcomp.mp.e1.ejerciciosclase.Ball[(" + x +","+ y +"),speed("+ xDelta +","+ yDelta +")]";
+        return "es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.Ball[(" + x +","+ y +"),speed("+ xDelta +","+ yDelta +")]";
     }
 
 }

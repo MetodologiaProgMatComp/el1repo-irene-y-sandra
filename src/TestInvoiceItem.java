@@ -1,4 +1,4 @@
-import es.uah.matcomp.mp.e1.ejerciciosclase.InvoiceItem;
+import es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.InvoiceItem;
 
 public class TestInvoiceItem {
     public static void main(String[] args) {

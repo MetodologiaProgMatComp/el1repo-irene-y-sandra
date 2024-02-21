@@ -1,4 +1,4 @@
-import es.uah.matcomp.mp.e1.ejerciciosclase.Circle;
+import es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.Circle;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -61,7 +61,7 @@ class CircleTest {
         f.setRadius(radius);
         f.setColor(color);
 
-        String salidaEsperada = "es.uah.matcomp.mp.e1.ejerciciosclase.Circle[radius=4.3 color=red]";
+        String salidaEsperada = "es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.Circle[radius=4.3 color=red]";
         assertEquals(salidaEsperada,f.toString(),"No sale el mismo texto en toString()");
     }
 }

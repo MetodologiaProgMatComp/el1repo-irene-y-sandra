@@ -1,4 +1,4 @@
-package es.uah.matcomp.mp.e1.ejerciciosclase;
+package es.uah.matcomp.mp.e1.ejerciciosclase.hoja1;
 
 import java.awt.*;
 
@@ -33,7 +33,7 @@ public class Circle {
     }
 
     public String toString (){
-        return "es.uah.matcomp.mp.e1.ejerciciosclase.Circle[radius=" + radius + " color=" + color + "]";
+        return "es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.Circle[radius=" + radius + " color=" + color + "]";
     }
 
 }

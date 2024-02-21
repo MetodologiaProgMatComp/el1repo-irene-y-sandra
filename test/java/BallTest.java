@@ -1,4 +1,4 @@
-import es.uah.matcomp.mp.e1.ejerciciosclase.Ball;
+import es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.Ball;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -102,7 +102,7 @@ class BallTest {
         float newXDelta = 3.2f;
         float newYDelta = 6.5f;
         Ball e = new Ball(4.3f,9.8f,67,3.2f,6.5f);
-        String salidaEsperada = "es.uah.matcomp.mp.e1.ejerciciosclase.Ball[(4.3,9.8),speed(3.2,6.5)]";
+        String salidaEsperada = "es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.Ball[(4.3,9.8),speed(3.2,6.5)]";
         assertEquals(salidaEsperada,e.toString(),"No sale el mismo texto en toString()");
     }
 }

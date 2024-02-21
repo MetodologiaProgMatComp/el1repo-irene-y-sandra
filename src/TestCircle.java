@@ -1,8 +1,8 @@
-import es.uah.matcomp.mp.e1.ejerciciosclase.Circle;
+import es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.Circle;
 
 public class TestCircle {
     public static void main(String[] args) {
-        //declara una instancia de la clase es.uah.matcomp.mp.e1.ejerciciosclase.Circle llamada c1
+        //declara una instancia de la clase es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.Circle llamada c1
         Circle c1 = new Circle();
         System.out.println("El circulo tiene un radio de " + c1.getRadius() + " y un area de " + c1.getArea());
         //el circulo tiene un radio de 1.0 y un area de 3.14

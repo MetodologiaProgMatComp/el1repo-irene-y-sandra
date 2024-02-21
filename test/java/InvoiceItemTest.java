@@ -1,4 +1,4 @@
-import es.uah.matcomp.mp.e1.ejerciciosclase.InvoiceItem;
+import es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.InvoiceItem;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -67,7 +67,7 @@ class InvoiceItemTest {
         f.setQty(qty);
         f.setUnitPrice(unitPrice);
 
-        String salidaEsperada = "es.uah.matcomp.mp.e1.ejerciciosclase.InvoiceItem[id=A101 desc=Pen red qty=99 unitPrice=4.3]";
+        String salidaEsperada = "es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.InvoiceItem[id=A101 desc=Pen red qty=99 unitPrice=4.3]";
         assertEquals(salidaEsperada,f.toString(),"No sale el mismo texto en toString()");
     }
 }

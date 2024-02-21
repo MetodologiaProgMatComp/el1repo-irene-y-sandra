@@ -1,4 +1,4 @@
-package es.uah.matcomp.mp.e1.ejerciciosclase;
+package es.uah.matcomp.mp.e1.ejerciciosclase.hoja1;
 
 import java.awt.*;
 public class Rectangle {
@@ -33,7 +33,7 @@ public class Rectangle {
         return (2*length)+(2*width);
     }
     public String toString(){
-        return "es.uah.matcomp.mp.e1.ejerciciosclase.Rectangle[length=" + length + " width=" + width + "]";
+        return "es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.Rectangle[length=" + length + " width=" + width + "]";
     }
 
 

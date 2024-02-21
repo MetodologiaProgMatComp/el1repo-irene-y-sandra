@@ -1,4 +1,4 @@
-import es.uah.matcomp.mp.e1.ejerciciosclase.Rectangle;
+import es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.Rectangle;
 
 public class TestRectangle {
     public static void main(String[] args) {

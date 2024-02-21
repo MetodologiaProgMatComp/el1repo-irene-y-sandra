@@ -1,4 +1,4 @@
-import es.uah.matcomp.mp.e1.ejerciciosclase.Rectangle;
+import es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.Rectangle;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -70,7 +70,7 @@ class RectangleTest {
         //d.setLength(newLength);
         //d.setWidth(newWidth);
 
-        String salidaEsperada = "es.uah.matcomp.mp.e1.ejerciciosclase.Rectangle[length=3.1 width=6.9]";
+        String salidaEsperada = "es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.Rectangle[length=3.1 width=6.9]";
         assertEquals(salidaEsperada,d.toString(), "No sale el mismo texto en toString()");
 
     }
