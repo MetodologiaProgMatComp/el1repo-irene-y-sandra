@@ -1,3 +1,5 @@
+package es.uah.matcomp.mp.e1.ejerciciosclase.hoja1;
+
 import es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.Rectangle;
 import org.junit.jupiter.api.Test;
 
