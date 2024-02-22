@@ -34,7 +34,7 @@ class Customer4Test {
     void testToString(){
         Customer4 d = new Customer4(5,"Sandra",23);
         String salidaEsperada = "[Sandra(5)(23%)]";
-        assertEquals(salidaEsperada,d.toString(),"los textos no son iguales");
+        assertEquals(salidaEsperada,d.toString(),"los textos no son iguales");//
 
     }
 }
