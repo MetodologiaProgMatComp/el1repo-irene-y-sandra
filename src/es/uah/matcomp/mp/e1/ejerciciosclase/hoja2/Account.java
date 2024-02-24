@@ -3,7 +3,7 @@ package es.uah.matcomp.mp.e1.ejerciciosclase.hoja2;
 public class Account {
     private int id;
     private Customer customer;
-    private double balance = 0.0;
+    private double balance;
 
     public Account(int id, Customer customer, double balance) {
         this.id = id;
@@ -14,6 +14,7 @@ public class Account {
     public Account(int id, Customer costumer) {
         this.id = id;
         this.customer = customer;
+        this.balance = 0.0;
     }
 
     public int getId() {

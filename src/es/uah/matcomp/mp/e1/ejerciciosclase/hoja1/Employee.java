@@ -30,7 +30,7 @@ public class Employee {
     }
 
     public String getName() {
-        return firstName + lastName;
+        return firstName +""+ lastName;
     }
 
     public void setSalary(int salary) {
@@ -42,8 +42,9 @@ public class Employee {
     }
 
     public int raiseSalary(int percent) {
-        int mult = ((percent/100)+1) * salary;
-        return mult;
+        double newSal = ((percent/100.0)+1);
+        setSalary((int)(newSal * salary));
+        return getSalary();
     }
 
     @Override

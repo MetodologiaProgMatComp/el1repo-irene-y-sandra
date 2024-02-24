@@ -23,8 +23,8 @@ class CircleTest {
 
     @Test
     void getColor() {
-//
-        //
+        Circle e = new Circle();
+        assertEquals("red", e.getColor());
     }
 
     @Test

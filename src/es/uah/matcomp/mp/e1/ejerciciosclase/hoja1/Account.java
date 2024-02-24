@@ -10,6 +10,7 @@ public class Account {
     public Account(String id, String name) {
         this.name = name;
         this.id = id;
+        this.balance = 0;
     }
 
     public Account(String id, String name, int balance) {
@@ -46,7 +47,7 @@ public class Account {
     public int transferTo(Account another, int amount) {
         if (amount <= balance) {
             this.balance -= amount;
-            another.credit(amount);
+            another.setBalance(amount);
         } else {
             System.out.println("El amount supera el balance");
         }
@@ -56,6 +57,10 @@ public class Account {
     @Override
     public String toString() {
         return "Account[" + "id='" + id + ", name='" + name + ", balance=" + balance + ']';
+    }
+
+    public void setBalance(int balance) {
+        this.balance = balance;
     }
 }
 
