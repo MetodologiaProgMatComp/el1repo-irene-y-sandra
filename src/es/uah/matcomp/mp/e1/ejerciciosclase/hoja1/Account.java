@@ -1,6 +1,6 @@
 package es.uah.matcomp.mp.e1.ejerciciosclase.hoja1;
 
-import java.security.KeyStore;
+import es.uah.matcomp.mp.e1.ejerciciosclase.hoja2.Customer;
 
 public class Account {
     private String id;
@@ -13,7 +13,7 @@ public class Account {
         this.balance = 0;
     }
 
-    public Account(String id, String name, int balance) {
+    public Account(int id, Customer name, int balance) {
         this.name = name;
         this.id = id;
         this.balance = balance;
