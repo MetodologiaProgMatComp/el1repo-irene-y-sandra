@@ -13,7 +13,7 @@ public class Account {
         this.balance = 0;
     }
 
-    public Account(int id, Customer name, int balance) {
+    public Account(String id, String name, int balance) {
         this.name = name;
         this.id = id;
         this.balance = balance;
