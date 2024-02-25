@@ -8,52 +8,48 @@ class AccountTest {
 
     @Test
     void getId() {
+        Account a = new Account("A101", "Tan Ah Teck", 88);
+        assertEquals("A101", a.getId());
     }
 
     @Test
     void getName() {
+        Account a = new Account("A101", "Tan Ah Teck", 88);
+        assertEquals("Tan Ah Teck", a.getName());
     }
 
     @Test
     void getBalance() {
+        Account a = new Account("A101", "Tan Ah Teck", 88);
+        assertEquals(88, a.getBalance());
     }
 
     @Test
     void credit() {
+        Account a = new Account("A101", "Tan Ah Teck", 88);
+        assertEquals(100, a.credit(12));
     }
 
     @Test
     void debit() {
+        Account a = new Account("A101", "Tan Ah Teck", 88);
+        assertEquals(80, a.debit(8));
+        a.debit(100);
     }
 
     @Test
     void transferTo() {
+        Account nuevo = new Account("A102","Kiki");
+        Account a = new Account("A101", "Tan Ah Teck", 88);
+        a.transferTo(nuevo,12);
+        assertEquals(12,nuevo.getBalance() );
+        a.transferTo(nuevo,100);
     }
 
     @Test
     void testToString() {
+        Account a = new Account("A101", "Tan Ah Teck", 88);
+        assertEquals("Account[id='A101, name='Tan Ah Teck, balance=88]",a.toString());
     }
 
-    public static void main(String[] args) {
-        // Test constructor and toString()
-        Account a1 = new Account("A101", "Tan Ah Teck", 88);
-        System.out.println(a1); // toString(); //s: los parametros que salen
-        Account a2 = new Account("A102", "Kumar"); // default balance
-        System.out.println(a2); //S: los parametros que salen + balance=0
-        // Test Getters
-        System.out.println("ID: " + a1.getId()); //A101
-        System.out.println("Name: " + a1.getName()); //Tan Ah Teck
-        System.out.println("Balance: " + a1.getBalance()); // 88
-        // Test credit() and debit()
-        a1.credit(100);
-        System.out.println(a1); //Balance 188 pero sale 88
-        a1.debit(50);
-        System.out.println(a1); // Balance 38
-        a1.debit(500); // debit() error
-        System.out.println(a1); //error
-        // Test transfer()
-        a1.transferTo(a2, 100); // toString()
-        System.out.println(a1);
-        System.out.println(a2);
-    }
 }

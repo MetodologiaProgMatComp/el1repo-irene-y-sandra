@@ -28,12 +28,12 @@ public class MyPoint {
     public void setY(int y) {
         this.y = y;
     }
-    public int[] getXY(){
-        int result[] = new int[2];
-        result[0]=getX();
-        result[1]=getY();
-        return result;
-    }
+        public int[] getXY(){
+            int result[] = new int[2];
+            result[0]=getX();
+            result[1]=getY();
+            return result;
+        }
     public void setXY(int x,int y){
         setX(x);
         setY(y);
@@ -46,16 +46,17 @@ public class MyPoint {
     public double distance(int xi,int yi){
         int distX= xi- x;
         int distY= yi - y;
-        return Math.sqrt((distX^2)+(distY^2));
+        return Math.sqrt(Math.pow(distX, 2) + Math.pow(distY, 2));
     }
     public double distance(MyPoint another) {
         int xi = another.getX();
         int yi = another.getY();
         int distX = xi - x;
         int distY = yi - y;
-        return Math.sqrt((distX ^ 2) + (distY ^ 2));
+        double aux = Math.pow(distX, 2) + Math.pow(distY, 2);
+        return Math.sqrt(aux);
     }
     public double distance(){
-        return Math.sqrt((x^2)+(y^2));
+        return Math.sqrt(Math.pow(x,2)+Math.pow(y,2));
     }
 }

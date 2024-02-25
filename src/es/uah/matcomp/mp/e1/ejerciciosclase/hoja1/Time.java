@@ -6,6 +6,7 @@ public class Time {
     private int second;
 
     public Time(int hour, int minute, int second) {
+        this.hour = hour;
         this.minute = minute;
         this.second = second;
     }
@@ -55,7 +56,7 @@ public class Time {
                 minute = 0;
                 hour++;
                 if (hour >= 24) {
-                    hour = 0;
+                    this.hour = 0;
                 }
             }
         }

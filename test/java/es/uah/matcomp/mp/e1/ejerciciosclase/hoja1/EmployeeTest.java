@@ -6,94 +6,60 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class EmployeeTest {
 
-        public static void main(String[] args) {
-            // Test constructor and toString()
-            Employee e1 = new Employee(8, "Peter", "Tan", 2500);
-            System.out.println(e1); // toString();
-            // Test Setters and Getters
-            e1.setSalary(999);
-            System.out.println(e1); // toString();
-            System.out.println("id is: " + e1.getId());
-            System.out.println("firstname is: " + e1.getFirstName());
-            System.out.println("lastname is: " + e1.getLastName());
-            System.out.println("salary is: " + e1.getSalary());
-            System.out.println("name is: " + e1.getName());
-            System.out.println("annual salary is: " + e1.getAnnualSalary()); // Test method
-            // Test raiseSalary()
-            System.out.println(e1.raiseSalary(10));
-            System.out.println(e1);
-        }
-
-
     @Test
     void getId() {
+        Employee e1 = new Employee(8, "Peter", "Tan", 2500);
+        assertEquals(8,e1.getId());
     }
 
     @Test
     void getFirstName() {
-    }
+        Employee e1 = new Employee(8, "Peter", "Tan", 2500);
+        assertEquals("Peter",e1.getFirstName());
+        }
 
     @Test
     void getLastName() {
+        Employee e1 = new Employee(8, "Peter", "Tan", 2500);
+        assertEquals("Tan",e1.getLastName());
     }
 
     @Test
     void getSalary() {
+        Employee e1 = new Employee(8, "Peter", "Tan", 2500);
+        assertEquals(2500,e1.getSalary());
     }
 
     @Test
     void getName() {
+        Employee e1 = new Employee(8, "Peter", "Tan", 2500);
+        assertEquals("PeterTan",e1.getName());
     }
 
     @Test
     void setSalary() {
+        Employee e1 = new Employee(8, "Peter", "Tan", 2500);
+        e1.setSalary(3000);
+        assertEquals(3000,e1.getSalary());
     }
 
     @Test
     void getAnnualSalary() {
+        Employee e1 = new Employee(8, "Peter", "Tan", 2500);
+        assertEquals(30000,e1.getAnnualSalary());
     }
 
     @Test
     void raiseSalary() {
+        Employee e1 = new Employee(8, "Peter", "Tan", 2500);
+        assertEquals(3000,e1.raiseSalary(20));
     }
 
     @Test
     void testToString() {
+        Employee e1 = new Employee(8, "Peter", "Tan", 2500);
+        e1.toString();
     }
 
-    @Test
-    void testGetId() {
-    }
 
-    @Test
-    void testGetFirstName() {
-    }
-
-    @Test
-    void testGetLastName() {
-    }
-
-    @Test
-    void testGetSalary() {
-    }
-
-    @Test
-    void testGetName() {
-    }
-
-    @Test
-    void testSetSalary() {
-    }
-
-    @Test
-    void testGetAnnualSalary() {
-    }
-
-    @Test
-    void testRaiseSalary() {
-    }
-
-    @Test
-    void testToString1() {
-    }
 }

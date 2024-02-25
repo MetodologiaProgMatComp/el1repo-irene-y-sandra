@@ -1,19 +1,20 @@
 package es.uah.matcomp.mp.e1.ejerciciosclase.hoja2;
 
-public class Account {
+public class Account2 {
     private int id;
     private Customer customer;
     private double balance = 0.0;
 
-    public Account(int id, Customer customer, double balance) {
+    public Account2(int id, Customer customer, double balance) {
         this.id = id;
         this.customer = customer;
         this.balance = balance;
     }
 
-    public Account(int id, Customer costumer) {
+    public Account2(int id, Customer costumer) {
         this.id = id;
         this.customer = customer;
+        this.balance = 0.0;
     }
 
     public int getId() {
@@ -35,22 +36,22 @@ public class Account {
     @Override
     public String toString() {
         double balanceRed = Math.round(balance * 100.0) / 100.0;
-        return customer.toString() + "balance=$" + balanceRed;
+        return customer.toString() + "balance=" + balanceRed;
     }
 
     public String getCostumerName() {
-        return customer.getName();
+        return (String) customer.getName();
     }
 
-    public Account deposit(double amount) {
+    public Account2 deposit(double amount) {
         double sum = amount + balance;
         setBalance(sum);
         return this;
     }
 
-    public Account withdraw(double amount) {
+    public Account2 withdraw(double amount) {
         if (balance >= amount) {
-            double res = amount - balance;
+            double res = balance - amount;
             setBalance(res);
         }else{
             System.out.println("El amount excede al balance");

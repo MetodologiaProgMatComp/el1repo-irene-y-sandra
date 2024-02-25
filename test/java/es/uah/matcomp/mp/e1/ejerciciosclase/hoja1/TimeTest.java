@@ -5,65 +5,72 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class TimeTest {
-
-
-    Time t1 = new Time(1, 2, 3);
-
     @Test
     void getHour() {
-
-        System.out.println("Hour: " + t1.getHour());
+        Time t1 = new Time(1, 2, 3);
+        assertEquals(1,t1.getHour());
     }
 
     @Test
     void getMinute() {
-        System.out.println("Minute: " + t1.getMinute());
+        Time t1 = new Time(1, 2, 3);
+        assertEquals(2,t1.getMinute());
     }
 
     @Test
     void getSecond() {
-        System.out.println("Second: " + t1.getSecond());
+        Time t1 = new Time(1, 2, 3);
+        assertEquals(3,t1.getSecond());
+
     }
 
     @Test
     void setHour() {
+        Time t1 = new Time(1, 2, 3);
         t1.setHour(4);
-        System.out.println(t1);
+        assertEquals(4,t1.getHour());
     }
 
     @Test
     void setMinute() {
+        Time t1 = new Time(1, 2, 3);
         t1.setMinute(5);
-        System.out.println(t1);
+        assertEquals(5,t1.getMinute());
+
     }
 
     @Test
     void setSecond() {
+        Time t1 = new Time(1, 2, 3);
         t1.setSecond(2);
-        System.out.println(t1);
+        assertEquals(2,t1.getSecond());
     }
 
     @Test
     void setTime() {
         Time time = new Time(0, 0, 0);
         time.setTime(12, 30, 45);
+        assertEquals(12, time.getHour());
+        assertEquals(30,time.getMinute());
+        assertEquals(45,time.getSecond());
     }
 
     @Test
     void testToString() {
-        Time time = new Time(9, 5, 0);
+        Time t1 = new Time(1, 2, 3);
+        assertEquals("01:02:03",t1.toString());
     }
 
     @Test
     void nextSecond() {
         Time time = new Time(23, 59, 59);
-        time.nextSecond();
+        assertEquals("00:00:00",time.nextSecond());
     }
 
     @Test
     void previousSecond() {
         Time time = new Time(0, 0, 0);
-        time.previousSecond();
+        assertEquals("23:59:59",time.previousSecond());
     }
 
 
