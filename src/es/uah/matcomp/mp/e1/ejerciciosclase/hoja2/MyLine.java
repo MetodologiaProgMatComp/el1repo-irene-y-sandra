@@ -79,13 +79,14 @@ public class MyLine {
     }
 
     public double getLength() {
-        return begin.distance();
+        return begin.distance(end);
     }
 
     public double getGradient() {
-        int ejex = getBeginX() - getEndX();
-        int ejey = getBeginY() - getEndY();
-        return Math.atan2(ejex, ejex);
+        int ejex = getEndX() - getBeginX();
+        int ejey = getEndY() - getBeginY();
+        double gradient = Math.atan2(ejex, ejex);
+        return Math.toDegrees(gradient);
     }
 
 

@@ -43,11 +43,13 @@ public class MyPoint {
     public String toString() {
         return "MyPoint[" + "x=" + x + ", y=" + y + ']';
     }
+
     public double distance(int xi,int yi){
         int distX= xi- x;
         int distY= yi - y;
         return Math.sqrt(Math.pow(distX, 2) + Math.pow(distY, 2));
     }
+
     public double distance(MyPoint another) {
         int xi = another.getX();
         int yi = another.getY();

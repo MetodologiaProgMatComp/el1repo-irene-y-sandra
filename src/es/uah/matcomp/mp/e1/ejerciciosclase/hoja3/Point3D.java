@@ -10,7 +10,7 @@ public class Point3D extends Point2D{
 
     public Point3D(){
         super();
-        this.z = z;
+        this.z = 0.0f;
     }
 
     public float getZ() {
