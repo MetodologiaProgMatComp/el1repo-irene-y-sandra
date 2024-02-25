@@ -9,7 +9,7 @@ public class Circle5 implements GeometricObject5{
 
     @Override
     public String toString() {
-        return "Circle2[" + "radius=" + radius + ']';
+        return "Circle5[" + "radius=" + radius + ']';
     }
 
     public double getArea(){

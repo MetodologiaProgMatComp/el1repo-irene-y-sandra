@@ -9,7 +9,7 @@ class Circle5Test {
     @Test
     void testToString() {
         Circle5 d = new Circle5(4.5);
-        String salidaEsperada = "Circle2[radius=4.5]";
+        String salidaEsperada = "Circle5[radius=4.5]";
         assertEquals(salidaEsperada,d.toString(),"Los textos no son iguales");
     }
 

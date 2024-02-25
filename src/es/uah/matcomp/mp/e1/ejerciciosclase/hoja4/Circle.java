@@ -33,6 +33,6 @@ public class Circle extends Shape{
     }
     @Override
     public String toString (){
-        return "es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.Circle[" + super.toString() + ", radius=" + radius + "]";
+        return "es.uah.matcomp.mp.e1.ejerciciosclase.hoja4.Circle[" + super.toString() + ", radius=" + radius + "]";
     }
 }
