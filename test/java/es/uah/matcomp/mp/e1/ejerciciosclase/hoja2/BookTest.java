@@ -19,10 +19,7 @@ class BookTest {
 
     @Test
     void getAuthor() {
-        Author a = new Author("Kika Superbruja","kika@nowhere.com");
-        Book b = new Book("123","Carlos",a,8.9);
-
-        assertDoesNotThrow(()->b.getAuthor());
+        assertEquals("Author[name=Tan Ah Teck, email=ahteck@nowhere.com]",b1.getAuthor().toString());
     }
 
     @Test
@@ -54,9 +51,6 @@ class BookTest {
 
     @Test
     void testToString() {
-        Author a = new Author("Kika Superbruja","kika@nowhere.com");
-        Book b = new Book("123","Carlos",a,8.9);
-        String salidaEsperada = "Book[isbn='123, name='Carlos, author=Author[name=Kika Superbruja, email=kika@nowhere.com], price=8.9, qty=0]";
-        assertEquals(salidaEsperada,b.toString());
+        assertEquals("Book[isbn='12345, name='Java for dummies, author=Author[name=Tan Ah Teck, email=ahteck@nowhere.com], price=8.8, qty=88]",b1.toString());
     }
 }

@@ -64,13 +64,13 @@ class TimeTest {
     @Test
     void nextSecond() {
         Time time = new Time(23, 59, 59);
-        assertEquals("00:00:00",time.nextSecond());
+        assertEquals("00:00:00",time.nextSecond().toString());
     }
 
     @Test
     void previousSecond() {
         Time time = new Time(0, 0, 0);
-        assertEquals("23:59:59",time.previousSecond());
+        assertEquals("23:59:59",time.previousSecond().toString());
     }
 
 

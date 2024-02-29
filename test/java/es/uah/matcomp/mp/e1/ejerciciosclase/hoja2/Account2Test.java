@@ -15,9 +15,7 @@ class Account2Test {
 
     @Test
     void getCostumer() {
-        Customer e = new Customer(12345,"Juan",'l');
-        Account2 d = new Account2(123,e);
-        assertDoesNotThrow(()-> d.getCostumer());
+        assertEquals("Pedro(123456789)", a.getCostumer().toString());
     }
 
     @Test

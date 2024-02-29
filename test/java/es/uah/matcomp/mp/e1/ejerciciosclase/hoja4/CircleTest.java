@@ -38,7 +38,7 @@ class CircleTest {
     @Test
     void testToString() {
         es.uah.matcomp.mp.e1.ejerciciosclase.hoja4.Circle d = new es.uah.matcomp.mp.e1.ejerciciosclase.hoja4.Circle("red",true,3.4);
-        String salidaEsperada = "es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.Circle[Shape[color='red, filled=true], radius=3.4]";
+        String salidaEsperada = "es.uah.matcomp.mp.e1.ejerciciosclase.hoja4.Circle[Shape[color='red, filled=true], radius=3.4]";
         assertEquals(salidaEsperada, d.toString(), "los textos no son iguales");
 
     }

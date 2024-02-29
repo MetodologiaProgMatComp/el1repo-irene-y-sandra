@@ -29,7 +29,7 @@ class AuthorTest {
         @Test
         void testToString () {
             Author a2 = new Author("Tan Ah Teck", "ahteck@nowhere.com");
-            assertEquals("Author[name='Tan Ah Teck, email='ahteck@nowhere.com]", a2.toString());
+            assertEquals("Author[name=Tan Ah Teck, email=ahteck@nowhere.com]", a2.toString());
         }
 
 }
