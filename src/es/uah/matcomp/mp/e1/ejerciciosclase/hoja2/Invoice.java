@@ -6,6 +6,7 @@ public class Invoice {
     private double amount;
 
 
+
     public Invoice(int id, Customer4 customer, double amount) {
         this.id = id;
         this.customer = customer;

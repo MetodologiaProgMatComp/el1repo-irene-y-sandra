@@ -13,7 +13,7 @@ public class MyCircle {
         center.setXY(0,0);
         radius = 1;
     }
-    public MyCircle(int x, int y,int radius){
+    public MyCircle(int x, int y,int radius){//
         center.setX(x);
         center.setY(y);
         this.radius = radius;
@@ -66,5 +66,5 @@ public class MyCircle {
     }
     public double distance(MyPoint another){
         return center.distance(another);
-    }//
+    }
 }

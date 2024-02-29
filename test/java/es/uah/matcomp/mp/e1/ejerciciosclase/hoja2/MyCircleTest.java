@@ -17,6 +17,7 @@ class MyCircleTest {
         MyPoint c2 = new MyPoint(1,1);
         circle.setCenter(c2);
         assertEquals("MyPoint[x=1, y=1]",circle.getCenter().toString());
+
     }
 
     @Test
@@ -89,4 +90,5 @@ class MyCircleTest {
         MyPoint p = new MyPoint(3,4);
         assertEquals(5, circle.distance(p));
     }
+
 }
