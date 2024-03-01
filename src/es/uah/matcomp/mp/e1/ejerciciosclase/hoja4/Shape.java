@@ -3,6 +3,7 @@ package es.uah.matcomp.mp.e1.ejerciciosclase.hoja4;
 public abstract class Shape {
     protected String color;
     protected boolean filled;
+
     public Shape() {
         color = "red";
         filled = true;
@@ -30,6 +31,7 @@ public abstract class Shape {
     }
 
     abstract public double getArea();
+
     abstract public double getPerimeter();
 
 

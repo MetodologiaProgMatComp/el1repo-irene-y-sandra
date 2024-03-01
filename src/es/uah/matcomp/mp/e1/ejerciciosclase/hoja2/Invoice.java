@@ -6,7 +6,6 @@ public class Invoice {
     private double amount;
 
 
-
     public Invoice(int id, Customer4 customer, double amount) {
         this.id = id;
         this.customer = customer;
@@ -32,19 +31,23 @@ public class Invoice {
     public void setAmount(double amount) {
         this.amount = amount;
     }
-    public int getCustomer4Id(){
+
+    public int getCustomer4Id() {
         return customer.getId();
     }
-    public String getCustomer4Name(){
+
+    public String getCustomer4Name() {
         return customer.getName();
     }
-    public int getCustomer4Discount(){
+
+    public int getCustomer4Discount() {
         return customer.getDiscount();
     }
-    public double getAmountAfterDiscount(){
-        double Descuento = 100-customer.getDiscount();
-        double precioDescuento = amount*Descuento;
-        return (precioDescuento/100); // imagino que el porcentaje, ya son los euros que hay quitar al precio total
+
+    public double getAmountAfterDiscount() {
+        double Descuento = 100 - customer.getDiscount();
+        double precioDescuento = amount * Descuento;
+        return (precioDescuento / 100); // imagino que el porcentaje, ya son los euros que hay quitar al precio total
     }
 
     @Override

@@ -1,6 +1,6 @@
 package es.uah.matcomp.mp.e1.ejerciciosclase.hoja4;
 
-public class Circle5 implements GeometricObject5{
+public class Circle5 implements GeometricObject5 {
     protected double radius;
 
     public Circle5(double radius) {
@@ -12,11 +12,11 @@ public class Circle5 implements GeometricObject5{
         return "Circle5[" + "radius=" + radius + ']';
     }
 
-    public double getArea(){
-        return radius*radius*Math.PI;
+    public double getArea() {
+        return radius * radius * Math.PI;
     }
 
-    public double getPerimeter(){
-        return 2*Math.PI*radius;
+    public double getPerimeter() {
+        return 2 * Math.PI * radius;
     }
 }

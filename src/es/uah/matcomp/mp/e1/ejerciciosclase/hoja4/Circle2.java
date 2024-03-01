@@ -12,11 +12,11 @@ public class Circle2 implements GeometricObject {
         return "Circle2[" + "radius=" + radius + ']';
     }
 
-    public double getArea(){
-        return radius*radius*Math.PI;
+    public double getArea() {
+        return radius * radius * Math.PI;
     }
 
-    public double getPerimeter(){
-        return 2*Math.PI*radius;
+    public double getPerimeter() {
+        return 2 * Math.PI * radius;
     }
 }

@@ -1,7 +1,7 @@
 package es.uah.matcomp.mp.e1.ejerciciosclase.hoja3;
 
-public class Student extends Person{
-    private String  program;
+public class Student extends Person {
+    private String program;
     private int year;
     private double fee;
 

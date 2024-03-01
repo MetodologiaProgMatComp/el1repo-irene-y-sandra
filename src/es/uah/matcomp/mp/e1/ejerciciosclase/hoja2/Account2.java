@@ -53,7 +53,7 @@ public class Account2 {
         if (balance >= amount) {
             double res = balance - amount;
             setBalance(res);
-        }else{
+        } else {
             System.out.println("El amount excede al balance");
         }
         return this;

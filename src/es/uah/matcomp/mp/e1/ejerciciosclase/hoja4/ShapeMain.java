@@ -25,7 +25,7 @@ public class ShapeMain {
         System.out.println(s3.getArea());
         System.out.println(s3.getPerimeter());
         System.out.println(s3.getColor());
-       // System.out.println(s3.getLength());
+        // System.out.println(s3.getLength());
 
         Rectangle r1 = (Rectangle) s3; // downcast
         System.out.println(r1);
@@ -37,7 +37,7 @@ public class ShapeMain {
         System.out.println(s4);
         System.out.println(s4.getArea());
         System.out.println(s4.getColor());
-       // System.out.println(s4.getSide());
+        // System.out.println(s4.getSide());
 
         // Take note that we downcast Shape s4 to Rectangle,
         // which is a superclass of Square, instead of Square
@@ -45,8 +45,8 @@ public class ShapeMain {
         System.out.println(r2);
         System.out.println(r2.getArea());
         System.out.println(r2.getColor());
-      //  System.out.println(r2.getSide());
-       // System.out.println(r2.getLength());
+        //  System.out.println(r2.getSide());
+        // System.out.println(r2.getLength());
 
         // Downcast Rectangle r2 to Square
         Square sq1 = (Square) r2;

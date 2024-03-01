@@ -7,7 +7,7 @@ public class Mammal extends Animal {
 
     @Override
     public String toString() {
-        return "Mammal["+ super.toString()+"]";
+        return "Mammal[" + super.toString() + "]";
     }
 
 }

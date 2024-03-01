@@ -1,50 +1,46 @@
 package es.uah.matcomp.mp.e1.ejerciciosclase.hoja4;
 
-public class MovableCircle implements Movable{
+public class MovableCircle implements Movable {
     private int radius;
     private MovablePoint center;
 
-    public MovableCircle(int radius, int x,int y,int xSpeed, int ySpeed) {
+    public MovableCircle(int radius, int x, int y, int xSpeed, int ySpeed) {
         this.radius = radius;
-        this.center.setX(x);
-        this.center.setY(y);
-        this.center.setxSpeed(xSpeed);
-        this.center.setySpeed(ySpeed);
+        this.center = new MovablePoint(x, y, xSpeed, ySpeed);
     }
-
 
 
     @Override
     public void moveUp() {
         int y = center.getY();
         int ySpeed = center.getySpeed();
-        center.setY(y-ySpeed);
+        center.setY(y - ySpeed);
     }
 
     @Override
     public void moveDown() {
-        int y = (int)center.getY();
+        int y = (int) center.getY();
         int ySpeed = (int) center.getySpeed();
-        center.setY(y+ySpeed);
+        center.setY(y + ySpeed);
     }
 
     @Override
     public void moveLeft() {
         int x = (int) center.getX();
         int xSpeed = (int) center.getxSpeed();
-        center.setX(x-xSpeed);
+        center.setX(x - xSpeed);
     }
 
     @Override
     public void moveRight() {
         int x = (int) center.getX();
         int xSpeed = (int) center.getxSpeed();
-        center.setX(x+xSpeed);
+        center.setX(x + xSpeed);
     }
 
     @Override
     public String toString() {
-        return "(" + center.getX() + "," + center.getY() + ") Speed=(" + center.getxSpeed() + "," + center.getySpeed() + ") radius= "+ radius;
+        return "(" + center.getX() + "," + center.getY() + ") Speed=(" + center.getxSpeed() + "," + center.getySpeed() + ") radius= " + radius;
 
     }
 

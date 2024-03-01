@@ -1,6 +1,6 @@
 package es.uah.matcomp.mp.e1.ejerciciosclase.hoja4;
 
-public class Rectangle2 implements GeometricObject{
+public class Rectangle2 implements GeometricObject {
     private double width;
     private double length;
 
@@ -14,11 +14,11 @@ public class Rectangle2 implements GeometricObject{
         return "Rectangle2[width=" + width + ", length=" + length + ']';
     }
 
-    public double getArea(){
-        return width*length;
+    public double getArea() {
+        return width * length;
     }
 
-    public double getPerimeter(){
-        return (2*width)+(2*length);
+    public double getPerimeter() {
+        return (2 * width) + (2 * length);
     }
 }

@@ -1,6 +1,6 @@
 package es.uah.matcomp.mp.e1.ejerciciosclase.hoja3;
 
-public class Staff extends Person{
+public class Staff extends Person {
     private String school;
     private double pay;
 

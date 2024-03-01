@@ -3,7 +3,7 @@ package es.uah.matcomp.mp.e1.ejerciciosclase.hoja3;
 public class Cylinder extends Circle {
     private double height;
 
-    public Cylinder(){
+    public Cylinder() {
         super();
         height = 1.0;
     }
@@ -30,11 +30,13 @@ public class Cylinder extends Circle {
     public void setHeight(double height) {
         this.height = height;
     }
-    public double getVolume(){
-        return (getArea()*height);
+
+    public double getVolume() {
+        return (getArea() * height);
     }
+
     @Override
-    public String toString (){
+    public String toString() {
         return "Cylinder: subclass of " + super.toString() + "height= " + height;
     }
 }

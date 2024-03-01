@@ -1,14 +1,15 @@
 package es.uah.matcomp.mp.e1.ejerciciosclase.hoja2;
 
 public class MyPoint {
-    private int x=0;
-    private int y=0;
+    private int x = 0;
+    private int y = 0;
 
     public MyPoint(int x, int y) {
         this.x = x;
         this.y = y;
     }
-    public MyPoint(){
+
+    public MyPoint() {
         this.x = 0;
         this.y = 0;
     }
@@ -28,13 +29,15 @@ public class MyPoint {
     public void setY(int y) {
         this.y = y;
     }
-        public int[] getXY(){
-            int result[] = new int[2];
-            result[0]=getX();
-            result[1]=getY();
-            return result;
-        }
-    public void setXY(int x,int y){
+
+    public int[] getXY() {
+        int result[] = new int[2];
+        result[0] = getX();
+        result[1] = getY();
+        return result;
+    }
+
+    public void setXY(int x, int y) {
         setX(x);
         setY(y);
     }
@@ -44,9 +47,9 @@ public class MyPoint {
         return "MyPoint[" + "x=" + x + ", y=" + y + ']';
     }
 
-    public double distance(int xi,int yi){
-        int distX= xi- x;
-        int distY= yi - y;
+    public double distance(int xi, int yi) {
+        int distX = xi - x;
+        int distY = yi - y;
         return Math.sqrt(Math.pow(distX, 2) + Math.pow(distY, 2));
     }
 
@@ -58,7 +61,8 @@ public class MyPoint {
         double aux = Math.pow(distX, 2) + Math.pow(distY, 2);
         return Math.sqrt(aux);
     }
-    public double distance(){
-        return Math.sqrt(Math.pow(x,2)+Math.pow(y,2));
+
+    public double distance() {
+        return Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
     }
 }

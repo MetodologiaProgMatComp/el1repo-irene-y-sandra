@@ -9,11 +9,13 @@ public class MyCircle {
         this.center = center;
         this.radius = radius;
     }
-    public MyCircle(){
-        center.setXY(0,0);
+
+    public MyCircle() {
+        center.setXY(0, 0);
         radius = 1;
     }
-    public MyCircle(int x, int y,int radius){//
+
+    public MyCircle(int x, int y, int radius) {//
         center.setX(x);
         center.setY(y);
         this.radius = radius;
@@ -35,36 +37,45 @@ public class MyCircle {
     public void setRadius(int radius) {
         this.radius = radius;
     }
-    public int getCenterX(){
+
+    public int getCenterX() {
         return center.getX();
     }
-    public void setCenterX(int x){
+
+    public void setCenterX(int x) {
         center.setX(x);
     }
-    public int getCenterY(){
+
+    public int getCenterY() {
         return center.getY();
     }
-    public void setCenterY(int y){
+
+    public void setCenterY(int y) {
         center.setY(y);
     }
-    public int[] getCenterXY(){
+
+    public int[] getCenterXY() {
         return center.getXY();
     }
-    public void setCenterXY(int x,int y){
-        center.setXY(x,y);
+
+    public void setCenterXY(int x, int y) {
+        center.setXY(x, y);
     }
 
     @Override
     public String toString() {
         return "MyCircle[" + "center=" + center.toString() + ", radius=" + radius + ']';
     }
-    public double getArea(){
-        return Math.PI * radius*radius;
+
+    public double getArea() {
+        return Math.PI * radius * radius;
     }
-    public double getCircumference(){
-        return 2*Math.PI *radius;
+
+    public double getCircumference() {
+        return 2 * Math.PI * radius;
     }
-    public double distance(MyPoint another){
+
+    public double distance(MyPoint another) {
         return center.distance(another);
     }
 }

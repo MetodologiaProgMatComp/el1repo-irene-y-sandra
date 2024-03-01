@@ -1,7 +1,7 @@
 package es.uah.matcomp.mp.e1.ejerciciosclase.hoja3;
 
 public class CylinderMain {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         // Declare and allocate a new instance of cylinder
         // with default color, radius, and height
         Cylinder c1 = new Cylinder();

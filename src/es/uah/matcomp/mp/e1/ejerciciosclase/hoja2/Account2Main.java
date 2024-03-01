@@ -1,7 +1,7 @@
 package es.uah.matcomp.mp.e1.ejerciciosclase.hoja2;
 
 public class Account2Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         //Test Customer class
         Customer c1 = new Customer(88, "Tan Ah Teck", 'm');
         System.out.println(c1); // Customer's toString()
@@ -10,7 +10,7 @@ public class Account2Main {
         System.out.println("discount is: " + c1.getGender());
 
         //Test Account class
-        Account2 a2= new Account2(123,c1,9.8);
+        Account2 a2 = new Account2(123, c1, 9.8);
         System.out.println(a2);
         a2.setBalance(6.7);
         System.out.println(a2);

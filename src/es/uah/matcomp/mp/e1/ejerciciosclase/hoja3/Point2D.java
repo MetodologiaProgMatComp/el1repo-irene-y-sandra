@@ -1,14 +1,15 @@
 package es.uah.matcomp.mp.e1.ejerciciosclase.hoja3;
 
 public class Point2D {
-    private float x=0.0f;
-    private float y=0.0f;
+    private float x = 0.0f;
+    private float y = 0.0f;
 
 
     public Point2D(float x, float y) {
         this.x = x;
         this.y = y;
     }
+
     public Point2D() {
         this.x = 0.0f;
         this.y = 0.0f;
@@ -29,13 +30,15 @@ public class Point2D {
     public void setY(float y) {
         this.y = y;
     }
+
     public float[] getXY() {
         float[] result = new float[2];
         result[0] = getX();
         result[1] = getY();
         return result;
     }
-    public void setXY(float x, float y){
+
+    public void setXY(float x, float y) {
         setX(x);
         setY(y);
     }

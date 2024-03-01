@@ -1,6 +1,6 @@
 package es.uah.matcomp.mp.e1.ejerciciosclase.hoja4;
 
-public class MovablePoint implements Movable{
+public class MovablePoint implements Movable {
     private int x;
     private int y;
     private int xSpeed;
@@ -17,23 +17,24 @@ public class MovablePoint implements Movable{
     public String toString() {
         return "(" + x + "," + y + ") Speed=(" + xSpeed + "," + ySpeed + ')';
     }
-    public void moveUp(){
-        this.y = y-=ySpeed;
+
+    public void moveUp() {
+        this.y = y -= ySpeed;
     }
 
     @Override
     public void moveDown() {
-        this.y = y+=ySpeed;
+        this.y = y += ySpeed;
     }
 
     @Override
     public void moveLeft() {
-        this.x = x-=xSpeed;
+        this.x = x -= xSpeed;
     }
 
     @Override
     public void moveRight() {
-        this.x = x+=xSpeed;
+        this.x = x += xSpeed;
     }
 
     public int getX() {

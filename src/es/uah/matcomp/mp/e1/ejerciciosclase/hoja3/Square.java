@@ -2,15 +2,16 @@ package es.uah.matcomp.mp.e1.ejerciciosclase.hoja3;
 
 public class Square extends Rectangle {
     private double side;
-    public Square(){
+
+    public Square() {
         side = 1.0d;
     }
 
-    public Square(double side){
+    public Square(double side) {
         this.side = side;
     }
 
-    public Square(String color, boolean filled, double side){
+    public Square(String color, boolean filled, double side) {
         super(color, filled);
         this.side = side;
     }
@@ -44,7 +45,7 @@ public class Square extends Rectangle {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return ("Square[" + super.toString() + "]");
     }
 }

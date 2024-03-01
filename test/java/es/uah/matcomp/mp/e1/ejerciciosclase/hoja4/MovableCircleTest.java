@@ -5,12 +5,12 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MovableCircleTest {
-    MovableCircle circle = new MovableCircle(5, 0, 0, 0, 1);
+    MovableCircle circle = new MovableCircle(1,0,0, 1, 2);
     @Test
     void moveUp() {
         circle.moveUp();
         assertEquals(0, circle.getCenter().getX());
-        assertEquals(-1,circle.getCenter().getY());
+        assertEquals(-2,circle.getCenter().getY());
     }
 
     @Test

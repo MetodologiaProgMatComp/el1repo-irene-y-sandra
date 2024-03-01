@@ -62,6 +62,7 @@ public class Time {
         }
         return this;
     }
+
     public Time previousSecond() {
         second--;
         if (second < 0) {

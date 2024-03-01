@@ -2,11 +2,12 @@ package es.uah.matcomp.mp.e1.ejerciciosclase.hoja3;
 
 public class Circle5 extends Shape {
     private double radius;
-    public Circle5(){
+
+    public Circle5() {
         radius = 1.0d;
     }
 
-    public Circle5(double radius){
+    public Circle5(double radius) {
         this.radius = radius;
     }
 
@@ -24,12 +25,12 @@ public class Circle5 extends Shape {
         this.radius = radius;
     }
 
-    public double getArea(){
-        return (Math.PI*radius*radius);
+    public double getArea() {
+        return (Math.PI * radius * radius);
     }
 
-    public double getPerimeter(){
-        return (2*Math.PI*radius);
+    public double getPerimeter() {
+        return (2 * Math.PI * radius);
     }
 
     @Override

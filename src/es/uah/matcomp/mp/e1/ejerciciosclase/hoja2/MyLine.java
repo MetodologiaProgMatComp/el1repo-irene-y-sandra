@@ -71,11 +71,11 @@ public class MyLine {
     }
 
     public void setBeginXY(int x, int y) {
-        begin.setXY(x,y);
+        begin.setXY(x, y);
     }
 
     public void setEndXY(int x, int y) {
-        end.setXY(x,y);
+        end.setXY(x, y);
     }
 
     public double getLength() {
@@ -88,7 +88,6 @@ public class MyLine {
         double gradient = Math.atan2(ejex, ejex);
         return Math.toDegrees(gradient);
     }
-
 
 
     @Override

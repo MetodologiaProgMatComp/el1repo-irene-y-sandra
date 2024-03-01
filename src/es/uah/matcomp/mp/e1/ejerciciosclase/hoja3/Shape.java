@@ -3,6 +3,7 @@ package es.uah.matcomp.mp.e1.ejerciciosclase.hoja3;
 public class Shape {
     private String color;
     private boolean filled;
+
     public Shape() {
         color = "red";
         filled = true;

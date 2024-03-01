@@ -52,7 +52,8 @@ public class Book {
     public void setQty(int qty) {
         this.qty = qty;
     }
-    public String getAuthorName(){
+
+    public String getAuthorName() {
         return author.getName();
     }
 
