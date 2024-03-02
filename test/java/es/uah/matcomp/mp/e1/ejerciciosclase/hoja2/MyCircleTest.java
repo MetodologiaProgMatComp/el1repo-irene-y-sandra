@@ -7,6 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class MyCircleTest {
     MyPoint cent = new MyPoint(0,0);
     MyCircle circle = new MyCircle(cent,1);
+    MyCircle circle1 = new MyCircle();
+    MyCircle circle2 = new MyCircle(0,0,1);
     @Test
     void getCenter() {
         assertEquals("MyPoint[x=0, y=0]",circle.getCenter().toString());
@@ -27,14 +29,14 @@ class MyCircleTest {
 
     @Test
     void setRadius() {
-        circle.setRadius(2);
-        assertEquals(2,circle.getRadius());
+        circle2.setRadius(2);
+        assertEquals(2,circle2.getRadius());
     }
 
     @Test
     void getCenterX() {
-        circle.setCenterXY(1,1);
-        assertEquals(1,circle.getCenterX());
+        circle1.setCenterXY(1,1);
+        assertEquals(1,circle1.getCenterX());
     }
 
     @Test
