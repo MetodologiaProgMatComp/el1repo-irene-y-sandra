@@ -11,13 +11,12 @@ public class MyCircle {
     }
 
     public MyCircle() {
-        center.setXY(0, 0);
-        radius = 1;
+        this.center = new MyPoint(0,0);
+        this.radius = 1;
     }
 
     public MyCircle(int x, int y, int radius) {//
-        center.setX(x);
-        center.setY(y);
+        this.center= new MyPoint(x,y);
         this.radius = radius;
     }
 
