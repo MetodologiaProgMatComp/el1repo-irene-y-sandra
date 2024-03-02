@@ -67,14 +67,16 @@ public class Ball {
     public void move() {
         x += xDelta;
         y += yDelta;
+        setX(x);
+        setY(y);
     }
 
     public void reflectHorizontal() {
-        xDelta = -xDelta;
+        setXDelta(-xDelta);
     }
 
     public void reflectVertical() {
-        yDelta = -yDelta;
+        setYDelta(-yDelta);
     }
 
     public String toString() {

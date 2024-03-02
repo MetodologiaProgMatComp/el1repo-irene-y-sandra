@@ -81,20 +81,27 @@ class BallTest {
 
     @Test
     void move() {
-        float newX = 4.3f;
-        float newY = 9.8f;
-        float newXDelta = 3.2f;
-        float newYDelta = 6.5f;
-        Ball e = new Ball();
+        Ball e = new Ball(4.3f,9.8f,67,3.2f,6.5f);
+        e.setX(1);
+        e.setY(5);
+        e.setXDelta(67);
+        e.setYDelta(56);
+        e.move();
+        assertEquals(e.getX(),68,"La coordenada no se ha movido");
+        assertEquals(e.getY(),61,"La coordenada no se ha movido");
 
     }
 
     @Test
     void reflectHorizontal() {
+        Ball e = new Ball(4.3f,9.8f,67,3.2f,6.5f);
+        assertDoesNotThrow(()->e.reflectHorizontal());
     }
 
     @Test
     void reflectVertical() {
+        Ball e = new Ball(4.3f,9.8f,67,3.2f,6.5f);
+        assertDoesNotThrow(()->e.reflectVertical());
     }
 
     @Test

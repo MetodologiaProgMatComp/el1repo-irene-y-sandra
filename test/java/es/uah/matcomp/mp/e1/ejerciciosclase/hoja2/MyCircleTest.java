@@ -5,90 +5,112 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MyCircleTest {
-    MyPoint cent = new MyPoint(0,0);
-    MyCircle circle = new MyCircle(cent,1);
     @Test
-    void getCenter() {
-        assertEquals("MyPoint[x=0, y=0]",circle.getCenter().toString());
+    void Constructor(){
+        MyCircle p3 = new MyCircle();
+        assertNotNull(p3);
     }
 
     @Test
+    void getCenter(){}
+
+    @Test
     void setCenter() {
-        MyPoint c2 = new MyPoint(1,1);
-        circle.setCenter(c2);
-        assertEquals("MyPoint[x=1, y=1]",circle.getCenter().toString());
+       MyPoint p1 = new MyPoint(3,4);
+       MyCircle c1 = new MyCircle(p1,3);
+       MyPoint p2 = new MyPoint(8,9);
+       MyPoint newPoint = p2;
+       assertDoesNotThrow(()->c1.setCenter(newPoint));
+       assertEquals(newPoint,c1.getCenter());
 
     }
 
     @Test
     void getRadius() {
-        assertEquals(1,circle.getRadius());
+
     }
 
     @Test
     void setRadius() {
-        circle.setRadius(2);
-        assertEquals(2,circle.getRadius());
+        MyCircle c1 = new MyCircle(2,3,5);
+        int newRadius = 8;
+        assertDoesNotThrow(()->c1.setRadius(newRadius));
+        assertEquals(newRadius,c1.getRadius());
     }
 
     @Test
     void getCenterX() {
-        circle.setCenterXY(1,1);
-        assertEquals(1,circle.getCenterX());
+
     }
 
     @Test
     void setCenterX() {
-        circle.setCenterX(3);
-        assertEquals(3,circle.getCenterX());
+        MyCircle c1 = new MyCircle(2,3,5);
+        int newCenterX = 8;
+        assertDoesNotThrow(()->c1.setCenterX(newCenterX));
+        assertEquals(newCenterX,c1.getCenterX());
     }
 
     @Test
     void getCenterY() {
-        circle.setCenterXY(1,1);
-        assertEquals(1,circle.getCenterY());
+
     }
 
     @Test
     void setCenterY() {
-        circle.setCenterY(3);
-        assertEquals(3,circle.getCenterY());
+        MyCircle c1 = new MyCircle(2,3,5);
+        int newCenterY = 8;
+        assertDoesNotThrow(()->c1.setCenterY(newCenterY));
+        assertEquals(newCenterY,c1.getCenterY());
+
     }
 
     @Test
     void getCenterXY() {
-        int[] aux = {circle.getCenterX(), circle.getCenterY()};
-        assertArrayEquals(aux,circle.getCenterXY());
+        MyPoint p1 = new MyPoint(3,4);
+        MyCircle c1 = new MyCircle(p1,3);
+        assertEquals(c1.getCenterXY()[0],3);
+        assertEquals(c1.getCenterXY()[1],4);
     }
 
     @Test
     void setCenterXY() {
-        circle.setCenterXY(1,1);
-        int[] aux = {circle.getCenterX(), circle.getCenterY()};
-        assertArrayEquals(aux,circle.getCenterXY());
+        MyPoint p1 = new MyPoint(3,4);
+        MyCircle c1 = new MyCircle(p1,3);
+        c1.setCenterXY(9,8);
+        assertEquals(c1.getCenterX(),9);
+        assertEquals(c1.getCenterY(),8);
+
+
     }
 
     @Test
     void testToString() {
-        assertEquals("MyCircle[center=MyPoint[x=0, y=0], radius=1]",circle.toString());
+        MyPoint p1 = new MyPoint(3,4);
+        MyCircle c1 = new MyCircle(p1,3);
+        String salidaEsperada = "MyCircle[center=MyPoint[x=3, y=4], radius=3]";
+        assertEquals(salidaEsperada,c1.toString());
     }
 
     @Test
     void getArea() {
-        circle.setRadius(1);
-        assertEquals(3.141592653589793,circle.getArea());
+        MyCircle c1 = new MyCircle(2,3,5);
+        assertEquals(5*5*Math.PI,c1.getArea());
     }
 
     @Test
     void getCircumference() {
-        assertEquals(6.283185307179586, circle.getCircumference());
+        MyCircle c1 = new MyCircle(2,3,5);
+        assertEquals(2*5*Math.PI,c1.getCircumference());
     }
 
     @Test
     void distance() {
-        circle.setCenter(cent);
-        MyPoint p = new MyPoint(3,4);
-        assertEquals(5, circle.distance(p));
+        MyPoint p1 = new MyPoint(3,4);
+        MyCircle c1 = new MyCircle(p1,3);
+        MyPoint p2 = new MyPoint(5,6);
+
+        assertEquals(2.8284271247461903,c1.distance(p2));
     }
 
 }

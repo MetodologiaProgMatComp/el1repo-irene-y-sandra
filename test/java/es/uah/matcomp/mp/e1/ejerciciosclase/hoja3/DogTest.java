@@ -10,11 +10,13 @@ class DogTest {
     Dog dog = new Dog("Kiki");
     @Test
     void greets() {
-
+        assertEquals("Woof",dog.greets());
     }
 
     @Test
     void testGreets() {
+        Dog dog2 = new Dog("Violeta");
+        assertEquals("Woooof", dog.greets(dog2));
     }
 
     @Test

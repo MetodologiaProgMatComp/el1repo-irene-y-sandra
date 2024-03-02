@@ -8,5 +8,7 @@ class CatTest {
 
     @Test
     void greets() {
+        Cat cat = new Cat("kiki");
+        assertEquals("Meow",cat.greets());
     }
 }

@@ -6,16 +6,16 @@ public class BigDog extends Dog {
     }
 
     @Override
-    public void greets() {
-        System.out.println("Woof");
+    public String greets() {
+        return ("Wooow");
     }
 
     @Override
-    public void greets(Dog another) {
-        System.out.println("Woooof");
+    public String greets(Dog another) {
+        return ("Woooooow");
     }
 
-    public void greets(BigDog another) {
-        System.out.println("Woooooooof");
+    public String greets(BigDog another) {
+        return ("Wooooooooow");
     }
 }

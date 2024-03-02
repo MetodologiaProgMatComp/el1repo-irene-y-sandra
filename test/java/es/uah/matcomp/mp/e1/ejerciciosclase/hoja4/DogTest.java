@@ -8,9 +8,14 @@ class DogTest {
 
     @Test
     void greets() {
+        Dog dog = new Dog("yiy");
+        assertEquals("Woof",dog.greets());
     }
 
     @Test
     void testGreets() {
+        Dog dog = new Dog("yiy");
+        Dog dog2 = new Dog("yey");
+        assertEquals("Woooof",dog.greets(dog2));
     }
 }

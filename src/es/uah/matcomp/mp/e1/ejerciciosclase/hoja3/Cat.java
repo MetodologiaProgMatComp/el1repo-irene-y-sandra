@@ -5,10 +5,12 @@ public class Cat extends Mammal {
         super(name);
     }
 
-    public void greets() {
-        System.out.println("Meow");
+   // public void greets() {
+     //   System.out.println("Meow");
+   // }//Como un System.out.println no lo puedo testear voy a crear otra funcion que me permita tertarlo
+    public String greets(){
+        return ("Meow");
     }
-
     @Override
     public String toString() {
         return "Cat[" + super.toString() + "]";

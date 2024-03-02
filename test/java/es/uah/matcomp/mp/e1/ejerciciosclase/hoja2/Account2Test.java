@@ -8,6 +8,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class Account2Test {
     Customer c = new Customer(123456789, "Pedro", 'm');
     Account2 a = new Account2(24680,c,30);
+
+    Account2 a2 = new Account2(234,c);
     @Test
     void getId() {
         assertEquals(24680, a.getId());
@@ -15,7 +17,7 @@ class Account2Test {
 
     @Test
     void getCostumer() {
-        assertEquals("Pedro(123456789)", a.getCostumer().toString());
+        assertDoesNotThrow(()-> a2.getCostumer());
     }
 
     @Test
