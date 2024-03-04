@@ -5,7 +5,7 @@ public class Cat extends Animal {
         super(name);
     }
 
-    public void greets() {
-        System.out.println("Meow");
+    public String greets() {
+        return  "Meow";
     }
 }
