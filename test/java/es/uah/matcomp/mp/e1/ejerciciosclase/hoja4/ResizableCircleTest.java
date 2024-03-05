@@ -10,7 +10,7 @@ class ResizableCircleTest {
     void testToString() {
         ResizableCircle d = new ResizableCircle(6.5);
         String salidaEsperada = "ResizableCircle[radius=6.5]";
-        assertEquals(salidaEsperada, d.toString(),"Los textos no son iguales");
+        assertEquals(salidaEsperada, d.toString(), "Los textos no son iguales");
 
     }
 
@@ -18,6 +18,6 @@ class ResizableCircleTest {
     void resize() {
         int newPercent = 20;
         ResizableCircle d = new ResizableCircle(9.8);
-        assertDoesNotThrow(()-> d.resize(newPercent) );
+        assertDoesNotThrow(() -> d.resize(newPercent));
     }
 }
