@@ -5,24 +5,22 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BigDogTest {
+    BigDog perro = new BigDog("Husky");
+    BigDog bigDog = new BigDog("Bernardo");
+    Dog perrito = new Dog("Chihuahua");
 
     @Test
     void greets() {
-        BigDog bigDog = new BigDog("yoyo");
-        assertEquals("Wooow",bigDog.greets());
+        assertEquals("Woof", perro.greets());
     }
 
     @Test
     void testGreets() {
-        BigDog bigDog = new BigDog("yoyo");
-        Dog dog2 = new Dog("yoyo");
-        assertEquals("Woooooow",bigDog.greets(dog2));
+        assertEquals("Woooooooof", perro.greets(bigDog));
     }
 
     @Test
     void testGreets1() {
-        BigDog bigDog = new BigDog("yoyo");
-        BigDog bigDog2 = new BigDog("yoyo");
-        assertEquals("Wooooooooow",bigDog.greets(bigDog2));
+        assertEquals("Woooof", perro.greets(perrito));
     }
 }

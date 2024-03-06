@@ -7,11 +7,11 @@ public class Dog extends Animal {
 
     @Override
     public String greets() {
-        return ("Woof");
+        return  "Woof";
     }
 
     public String greets(Dog another) {
-        return ("Woooof");
+        return  "Woooof";
     }
 
 }

@@ -8,7 +8,7 @@ class CatTest {
     Cat cat = new Cat("Kiki");
     @Test
     void greets() {
-        assertEquals("Meow",cat.greets(), "Los textos no son iguales");
+        assertEquals("Meow",cat.greets());
     }
 
     @Test

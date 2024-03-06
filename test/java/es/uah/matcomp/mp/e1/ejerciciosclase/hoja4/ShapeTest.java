@@ -25,8 +25,8 @@ class ShapeTest {
                 return 0;
             }
         };
-        assertDoesNotThrow(()->d.setColor(newColor));
-        assertEquals(newColor,d.getColor(),"Los colores no son iguales");
+        assertDoesNotThrow(() -> d.setColor(newColor));
+        assertEquals(newColor, d.getColor(), "Los colores no son iguales");
     }
 
     @Test
@@ -59,7 +59,7 @@ class ShapeTest {
                 return 0;
             }
         };
-        assertDoesNotThrow(()->f.setFilled(newFilled));
+        assertDoesNotThrow(() -> f.setFilled(newFilled));
     }
 
     @Test
@@ -84,6 +84,6 @@ class ShapeTest {
             }
         };
         String salidaEsperada = "Shape[color='black, filled=true]";
-        assertEquals(salidaEsperada,f.toString(),"Los textos no son iguales");
+        assertEquals(salidaEsperada, f.toString(), "Los textos no son iguales");
     }
 }

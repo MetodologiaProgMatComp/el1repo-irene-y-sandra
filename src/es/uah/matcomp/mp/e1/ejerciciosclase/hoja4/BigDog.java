@@ -7,15 +7,15 @@ public class BigDog extends Dog {
 
     @Override
     public String greets() {
-        return ("Wooow");
+        return "Woof";
     }
 
     @Override
     public String greets(Dog another) {
-        return ("Woooooow");
+        return  "Woooof";
     }
 
     public String greets(BigDog another) {
-        return ("Wooooooooow");
+        return "Woooooooof";
     }
 }

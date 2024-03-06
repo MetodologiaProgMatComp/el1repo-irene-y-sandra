@@ -6,6 +6,6 @@ public class Cat extends Animal {
     }
 
     public String greets() {
-        return ("Meow");
+        return  "Meow";
     }
 }

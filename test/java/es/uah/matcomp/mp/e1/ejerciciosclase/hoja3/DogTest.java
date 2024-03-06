@@ -8,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class DogTest {
     Dog dog = new Dog("Kiki");
+    Dog d2 = new Dog("Violeta");
     @Test
     void greets() {
         assertEquals("Woof",dog.greets());
@@ -15,8 +16,7 @@ class DogTest {
 
     @Test
     void testGreets() {
-        Dog dog2 = new Dog("Violeta");
-        assertEquals("Woooof", dog.greets(dog2));
+        assertEquals("Woooof", dog.greets(d2));
     }
 
     @Test

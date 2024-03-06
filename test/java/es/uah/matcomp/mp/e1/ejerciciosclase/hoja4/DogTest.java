@@ -5,17 +5,16 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class DogTest {
+    Dog d = new Dog("Perro");
+    Dog d2 = new Dog("otro");
 
     @Test
     void greets() {
-        Dog dog = new Dog("yiy");
-        assertEquals("Woof",dog.greets());
+        assertEquals("Woof", d.greets());
     }
 
     @Test
     void testGreets() {
-        Dog dog = new Dog("yiy");
-        Dog dog2 = new Dog("yey");
-        assertEquals("Woooof",dog.greets(dog2));
+        assertEquals("Woooof", d.greets(d2));
     }
 }

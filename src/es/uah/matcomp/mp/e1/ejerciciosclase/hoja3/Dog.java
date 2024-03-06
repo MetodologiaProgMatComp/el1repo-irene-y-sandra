@@ -7,19 +7,12 @@ public class Dog extends Mammal {
         super(name);
     }
 
-    //public void greets() {
-      //  System.out.println("Woof");
-    //}///Como esta funcion no la puedo testear, voy a hacer otra semejante
-    public String greets(){
-        return ("Woof");
+    public String greets() {
+        return "Woof";
     }
 
-    //public void greets(Dog another) {
-     //   System.out.println("Woooof");
-   // }//Como esta funcion no la puedo testear, voy a hacer otra semejante
-
-    public String greets(Dog another){
-        return ("Woooof");
+    public String greets(Dog another) {
+        return "Woooof";
     }
 
     @Override
