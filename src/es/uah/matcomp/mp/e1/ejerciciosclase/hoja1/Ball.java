@@ -7,7 +7,7 @@ public class Ball {
     private float xDelta;
     private float yDelta;
 
-    public Ball() {
+    public Ball() { //
         x = 9.4f;
         y = 8.6f;
         radius = 8;

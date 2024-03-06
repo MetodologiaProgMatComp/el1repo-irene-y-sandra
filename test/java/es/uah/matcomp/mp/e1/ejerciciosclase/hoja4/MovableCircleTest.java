@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MovableCircleTest {
+class MovableCircleTest {//
     MovableCircle circle = new MovableCircle(1,1,0, 1, 2);
     @Test
     void moveUp() {

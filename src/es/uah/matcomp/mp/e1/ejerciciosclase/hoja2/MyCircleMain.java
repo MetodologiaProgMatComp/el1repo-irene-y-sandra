@@ -22,5 +22,5 @@ public class MyCircleMain {
         System.out.println("el area es: " + c1.getArea());
         System.out.println("la circunferencia es: " + c1.getCircumference());
         System.out.println("la distacia es: " + c1.distance(p1));
-    }
+    }//
 }
