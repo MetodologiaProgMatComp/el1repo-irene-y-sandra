@@ -1,9 +1,9 @@
-import es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.Date;
+package es.uah.matcomp.mp.e1.ejerciciosclase.hoja1;
 
-public class TestDate {
+public class DateMain {
     public static void main(String[] args) {
         // Test constructor and toString()
-        Date d1 = new Date(9, 2, 2014);
+        Date d1 = new Date(1, 2, 2014);
         System.out.println(d1); // toString()
         // Test Setters and Getters
         d1.setMonth(12);
@@ -17,4 +17,5 @@ public class TestDate {
         d1.setDate(3, 4, 2016);
         System.out.println(d1); // toString()
     }
+
 }
