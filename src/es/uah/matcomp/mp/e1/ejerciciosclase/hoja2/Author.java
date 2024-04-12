@@ -1,5 +1,7 @@
 package es.uah.matcomp.mp.e1.ejerciciosclase.hoja2;
 
+import es.uah.matcomp.mp.e1.ejerciciosclase.Gson1;
+
 public class Author {
     private String name;
     private String email;
@@ -25,6 +27,10 @@ public class Author {
     @Override
     public String toString() {
         return "Author[" + "name=" + name + ", email=" + email + ']';
+    }
+
+    public static void guardarObjetoEnArchivo(String rutaArchivo, Author autor) {
+        Gson1.guardarObjetoEnArchivo(rutaArchivo,autor);
     }
 
 }

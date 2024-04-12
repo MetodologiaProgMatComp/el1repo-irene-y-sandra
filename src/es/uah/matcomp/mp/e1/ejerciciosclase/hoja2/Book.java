@@ -1,5 +1,8 @@
 package es.uah.matcomp.mp.e1.ejerciciosclase.hoja2;
 
+import es.uah.matcomp.mp.e1.ejerciciosclase.Gson1;
+import es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.Account;
+
 import java.awt.*;
 
 public class Book {
@@ -61,5 +64,8 @@ public class Book {
     public String toString() {
         return "Book[" + "isbn='" + isbn + ", name='" + name + ", author=" + author.toString() + ", price=" + price +
                 ", qty=" + qty + ']';
+    }
+    public static void guardarObjetoEnArchivo(String rutaArchivo, Book libro) {
+        Gson1.guardarObjetoEnArchivo(rutaArchivo,libro);
     }
 }

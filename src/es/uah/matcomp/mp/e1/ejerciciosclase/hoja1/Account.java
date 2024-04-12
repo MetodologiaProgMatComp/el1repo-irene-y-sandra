@@ -1,6 +1,12 @@
 package es.uah.matcomp.mp.e1.ejerciciosclase.hoja1;
 
+import com.google.gson.Gson;
+import es.uah.matcomp.mp.e1.ejerciciosclase.Gson1;
 import es.uah.matcomp.mp.e1.ejerciciosclase.hoja2.Customer;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class Account {
     private String id;
@@ -17,6 +23,10 @@ public class Account {
         this.name = name;
         this.id = id;
         this.balance = balance;
+    }
+
+    public static void guardarObjetoEnArchivo(String rutaArchivo, Account cuenta) {
+        Gson1.guardarObjetoEnArchivo(rutaArchivo,cuenta);
     }
 
     public String getId() {
@@ -62,6 +72,8 @@ public class Account {
     public void setBalance(int balance) {
         this.balance = balance;
     }
+
+
 }
 
 

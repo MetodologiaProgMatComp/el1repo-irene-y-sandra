@@ -1,5 +1,7 @@
 package es.uah.matcomp.mp.e1.ejerciciosclase.hoja1;
 
+import es.uah.matcomp.mp.e1.ejerciciosclase.Gson1;
+
 public class Ball {
     private float x;
     private float y;
@@ -80,5 +82,7 @@ public class Ball {
     public String toString() {
         return "es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.Ball[(" + x + "," + y + "),speed(" + xDelta + "," + yDelta + ")]";
     }
-
+    public static void guardarObjetoEnArchivo(String rutaArchivo, Ball bola) {
+        Gson1.guardarObjetoEnArchivo(rutaArchivo,bola);
+    }
 }

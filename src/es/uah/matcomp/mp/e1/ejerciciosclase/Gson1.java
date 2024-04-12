@@ -1,12 +1,12 @@
-package es.uah.matcomp.mp.e1.ejerciciosclase.gson;
-
-import com.google.gson.Gson;
+package es.uah.matcomp.mp.e1.ejerciciosclase;
 
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import com.google.gson.Gson;
 
-public class Gson1 {
+
+public abstract class Gson1 {
     // Método para guardar un objeto en un archivo JSON
     public static <T> void guardarObjetoEnArchivo(String rutaArchivo, T objeto) {
         Gson gson = new Gson();
