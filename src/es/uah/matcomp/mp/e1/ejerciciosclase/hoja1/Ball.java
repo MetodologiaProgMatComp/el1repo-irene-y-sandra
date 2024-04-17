@@ -9,7 +9,7 @@ public class Ball {
     private float xDelta;
     private float yDelta;
 
-    public Ball() {
+    public Ball() { //
         x = 9.4f;
         y = 8.6f;
         radius = 8;
@@ -69,14 +69,16 @@ public class Ball {
     public void move() {
         x += xDelta;
         y += yDelta;
+        setX(x);
+        setY(y);
     }
 
     public void reflectHorizontal() {
-        xDelta = -xDelta;
+        setXDelta(-xDelta);
     }
 
     public void reflectVertical() {
-        yDelta = -yDelta;
+        setYDelta(-yDelta);
     }
 
     public String toString() {

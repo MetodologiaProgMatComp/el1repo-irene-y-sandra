@@ -1,6 +1,6 @@
-import es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.Ball;
+package es.uah.matcomp.mp.e1.ejerciciosclase.hoja1;
 
-public class TestBall {
+public class BallMain {
     public static void main(String[] args) {
         // Test constructor and toString()
         Ball ball = new Ball(1.1f, 2.2f, 10, 3.3f, 4.4f);
@@ -37,5 +37,4 @@ public class TestBall {
             }
         }
     }
-
 }

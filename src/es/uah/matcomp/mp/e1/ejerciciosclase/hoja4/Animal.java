@@ -7,8 +7,7 @@ public abstract class Animal {
         this.name = name;
     }
 
-    public String greets() {
-        return "";
-    }
+    public abstract String greets(); //
+
 
 }

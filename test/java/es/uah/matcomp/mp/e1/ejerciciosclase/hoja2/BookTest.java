@@ -7,6 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class BookTest {
     Author a1 = new Author("Tan Ah Teck", "ahteck@nowhere.com");
     Book b1 = new Book("12345", "Java for dummies", a1, 8.8, 88);
+
+    Book b2 = new Book("123","Sol",a1,76.4);
     @Test
     void getIsbn() {
         assertEquals("12345",b1.getIsbn());
@@ -19,7 +21,7 @@ class BookTest {
 
     @Test
     void getAuthor() {
-        assertEquals("Author[name=Tan Ah Teck, email=ahteck@nowhere.com]",b1.getAuthor().toString());
+        assertEquals("Author[name=Tan Ah Teck, email=ahteck@nowhere.com]",b2.getAuthor().toString());
     }
 
     @Test
