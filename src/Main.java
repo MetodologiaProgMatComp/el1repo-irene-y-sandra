@@ -3,6 +3,10 @@ import es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.Account;
 import es.uah.matcomp.mp.e1.ejerciciosclase.hoja1.Ball;
 import es.uah.matcomp.mp.e1.ejerciciosclase.hoja2.Author;
 import es.uah.matcomp.mp.e1.ejerciciosclase.hoja2.Book;
+import es.uah.matcomp.mp.e1.ejerciciosclase.hoja3.MovablePoint;
+import es.uah.matcomp.mp.e1.ejerciciosclase.hoja3.Point;
+import es.uah.matcomp.mp.e1.ejerciciosclase.hoja4.Circle5;
+import es.uah.matcomp.mp.e1.ejerciciosclase.hoja4.ResizableCircle;
 
 public class Main {
     public static void main(String[] args) {
@@ -58,7 +62,56 @@ public class Main {
         libroNuevo.setPrice(20.4);
         libroNuevo.setQty(4);
         libroNuevo.guardarObjetoEnArchivo("libro2.json",libroNuevo);
+
+        //Point
+        Point point1 = new Point(23,67);
+        String rutaPoint = "point.json";
+        Point.guardarObjetoEnArchivo(rutaPoint,point1);
+        Point pointCargado = Gson1.cargarObjetoDesdeArchivo(rutaPoint, Point.class);
+        if(pointCargado!=null){
+            System.out.println("point cargado: " + pointCargado);
+        }
+        Point pointNuevo = Gson1.cargarObjetoDesdeArchivo(rutaPoint, Point.class);
+        pointNuevo.setX(34);
+        pointNuevo.guardarObjetoEnArchivo("point2.json", pointNuevo);
+
+        //MovablePoint
+        MovablePoint movablePoint = new MovablePoint(98,43,45,32);
+        String rutaMovablePoint = "movablePoint.json";
+        MovablePoint.guardarObjetoEnArchivo(rutaMovablePoint,movablePoint);
+        MovablePoint movablePointCargado = Gson1.cargarObjetoDesdeArchivo(rutaMovablePoint, MovablePoint.class);
+        if (movablePointCargado!=null){
+            System.out.println("movablePoint" + movablePointCargado);
+        }
+        MovablePoint movablePointNuevo = Gson1.cargarObjetoDesdeArchivo(rutaMovablePoint, MovablePoint.class);
+        movablePointNuevo.setSpeed(789,345);
+        movablePointNuevo.guardarObjetoEnArchivo("movablePoint2.json", movablePointNuevo);
+
+        //Cicle5
+        Circle5 cicle5 = new Circle5(34);
+        String rutaCicle5 = "cicle5.json";
+        Circle5.guardarObjetoEnArchivo(rutaCicle5,cicle5);
+        Circle5 cicle5Cargado = Gson1.cargarObjetoDesdeArchivo(rutaCicle5, Circle5.class);
+        if(cicle5Cargado!=null){
+            System.out.println("cicle5" + cicle5Cargado);
+        }
+        Circle5 cicle5Nuevo = Gson1.cargarObjetoDesdeArchivo(rutaCicle5, Circle5.class);
+        cicle5Nuevo.setRadius(789);
+        cicle5Nuevo.guardarObjetoEnArchivo("cicle5nuevo.json", cicle5Nuevo);
+
+        //ResizableCircle
+        ResizableCircle resizableCircle = new ResizableCircle(45);
+        String rutaResizableCicle = "resizableCicle.json";
+        ResizableCircle.guardarObjetoEnArchivo(rutaResizableCicle,resizableCircle);
+        ResizableCircle resizableCircleCargado = Gson1.cargarObjetoDesdeArchivo(rutaResizableCicle, ResizableCircle.class);
+        if(resizableCircleCargado!=null){
+            System.out.println("resizableCircleCargado" + resizableCircleCargado);
+        }
+        ResizableCircle resizableCircleNuevo = Gson1.cargarObjetoDesdeArchivo(rutaResizableCicle, ResizableCircle.class);
+        resizableCircleNuevo.setRadius(6788);
+        resizableCircleNuevo.guardarObjetoEnArchivo("resizableCircle2.json", resizableCircleNuevo);
     }
+
 
 
 }

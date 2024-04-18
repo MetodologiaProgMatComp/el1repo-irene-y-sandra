@@ -1,5 +1,8 @@
 package es.uah.matcomp.mp.e1.ejerciciosclase.hoja3;
 
+import es.uah.matcomp.mp.e1.ejerciciosclase.Gson1;
+import es.uah.matcomp.mp.e1.ejerciciosclase.hoja2.Book;
+
 public class Point {
     private float x = 0.0f;
     private float y = 0.0f;
@@ -45,6 +48,10 @@ public class Point {
     @Override
     public String toString() {
         return "(" + x + "," + y + ')';
+    }
+
+    public static void guardarObjetoEnArchivo(String rutaArchivo, Point point) {
+        Gson1.guardarObjetoEnArchivo(rutaArchivo,point);
     }
 
 }

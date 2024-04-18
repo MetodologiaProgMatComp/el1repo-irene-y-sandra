@@ -14,6 +14,8 @@ public class Customer4Main {
         Invoice inv1 = new Invoice(101, c1, 888.8);
         System.out.println(inv1);
         inv1.setAmount(999.9);
+        Customer4 c2 = new Customer4(99, "Elena", 8);
+        inv1.setCustomer(c2);
         System.out.println(inv1);
         System.out.println("id is: " + inv1.getId());
         System.out.println("customer is: " + inv1.getCustomer()); // Customer's toString()

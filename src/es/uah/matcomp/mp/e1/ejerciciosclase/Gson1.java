@@ -1,10 +1,10 @@
 package es.uah.matcomp.mp.e1.ejerciciosclase;
 
+import com.google.gson.Gson;
+
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import com.google.gson.Gson;
-
 
 public abstract class Gson1 {
     // Método para guardar un objeto en un archivo JSON

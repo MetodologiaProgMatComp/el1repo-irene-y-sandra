@@ -1,5 +1,7 @@
 package es.uah.matcomp.mp.e1.ejerciciosclase.hoja3;
 
+import es.uah.matcomp.mp.e1.ejerciciosclase.Gson1;
+
 public class MovablePoint extends Point {
     private float xSpeed = 0.0f;
     private float ySpeed = 0.0f;
@@ -61,6 +63,10 @@ public class MovablePoint extends Point {
         setX(x += xSpeed);
         setY(y += ySpeed);
         return this;
+    }
+
+    public static void guardarObjetoEnArchivo(String rutaArchivo, MovablePoint movablePoint) {
+        Gson1.guardarObjetoEnArchivo(rutaArchivo,movablePoint);
     }
 
 }
